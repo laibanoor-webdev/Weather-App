@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-app">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter city name" >
+            <button id="searchBtn">Search</button>
+        </div>
+      
+        <p id="error"></p>
+
+        <div class="weather-card">
+            <h2 id="cityName">Karachi, Pakistan</h2>
+            <p id="date">Weather Information</p>
+            <div class="weather-main">
+                <div class="temperature">
+                    <span id="temperature">--</span>
+                    <span>°C</span>
+                </div>
+
+                <div class="weather-condition">
+                    <div id="weatherIcon">☀️</div>
+                    <p id="condition">--</p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">--°C</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+            </div>
+         </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #2c7da0,
+        #012a4a
+    );
+
+    padding: 20px;
+}
+
+.weather-app {
+    width: 100%;
+    max-width: 600px;
+
+    background: #caf0f8 ;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #172033;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #3498db;
+}
+
+.search-box button {
+    padding: 14px 22px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #3498db;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #468faf;
+}
+
+#error {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.weather-card {
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #61a5c2,
+        #89c2d9
+    );
+
+    text-align: center;
+}
+
+.weather-card h2 {
+    color: #172033;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+#date {
+    color: #023047;
+    margin-bottom: 25px;
+}
+
+/* Temperature */
+
+.weather-main {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    margin-bottom: 30px;
+}
+
+.temperature {
+    font-size: 60px;
+    font-weight: bold;
+    color: #172033;
+}
+
+.temperature span:last-child {
+    font-size: 30px;
+}
+
+.weather-condition {
+    text-align: center;
+}
+
+#weatherIcon {
+    font-size: 55px;
+}
+
+.weather-condition p {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #023047;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.detail {
+    background: #a9d6e5 ;
+    padding: 15px 8px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.detail span {
+    font-size: 25px;
+}
+
+.detail p {
+    color: #023047;
+    font-size: 13px;
+    margin: 7px 0;
+}
+
+.detail strong {
+    color: #172033;
+}
+
+@media (max-width: 500px) {
+    .weather-app {
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .weather-main {
+        gap: 20px;
+    }
+
+    .temperature {
+        font-size: 48px;
+    }
+
+    #weatherIcon {
+        font-size: 45px;
+    }
+
+    .weather-details {
+        grid-template-columns: 1fr;
+    }
+}
