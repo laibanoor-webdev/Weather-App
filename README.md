@@ -21,3 +21,11 @@ A simple weather application built using HTML, CSS, and JavaScript.
 ## How It Works
 
 Enter a city name in the search box to view its current weather information.
+
+## Preview
+
+![Weather App Screenshot](weather-app.png)
+
+## Demo Video
+
+[Watch Weather App Demo](./weather-app-video.mp4)
